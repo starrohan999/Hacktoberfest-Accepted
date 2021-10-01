@@ -29,6 +29,12 @@ To earn your Hacktoberfest tee or tree reward, you must register and make four v
     </a>
 </h3>
 
+<h3 align="center">
+    <a href="https://hacktoberfestswaglist.com/">
+       Hacktoberfest 2021 Swag List
+    </a>
+</h3>
+
 ***
 ## Rules To Contribute To This Repo
 
