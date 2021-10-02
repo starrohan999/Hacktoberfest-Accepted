@@ -17,7 +17,6 @@ Enter a Postfix Equation (space separated) = 5 6 9 * +
 
 import operator as op
 
-
 def Solve(Postfix):
     Stack = []
     def Div(x, y): return int(x / y)  # noqa: E731 integer division operation
@@ -65,6 +64,5 @@ def Solve(Postfix):
 
 
 if __name__ == "__main__":
-    Postfix = input(
-        "\n\nEnter a Postfix Equation (space separated) = ").split(" ")
+    Postfix = input("\n\nEnter a Postfix Equation (space separated) = ").split(" ")
     print("\n\tResult = ", Solve(Postfix))
