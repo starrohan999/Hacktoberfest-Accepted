@@ -10,22 +10,19 @@ int partition(T *a, int p, int q)
  {
  	while(a[i] <= pivot && i<=q)
  	{
- i=i+1;
+    i=i+1;
  	}
- 
  	while(a[j] > pivot)
  	{
- 	j=j-1;
+ 	  j=j-1;
  	} 
- 
  	if(i < j)
  	{
  	T temp=a[i];
-a[i] = a[j];
+  a[i] = a[j];
  	a[j] = temp;
  }
  }
- 
  a[p]=a[j];
  a[j]=pivot;
  return j;
@@ -57,9 +54,7 @@ int main() {
  	}
  	int l=0;
  	int h=n-1;
- 
  	Quick_Sort<int>(arr,l,h);
- 
  	cout << "Array after Sorting: ";
  	display(arr, n);
 } 
