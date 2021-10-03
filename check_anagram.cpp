@@ -1,7 +1,7 @@
 /*
 Q> Write a program to check if two given strings are anagrams of each other. 
 An anagram of a string is another string that contains the same characters, only the order of characters may be different. 
-eg- “SLAP” and “PALS” are an anagrams of each other.
+eg- â€œSLAPâ€ and â€œPALSâ€ are an anagrams of each other.
 */
 
 
