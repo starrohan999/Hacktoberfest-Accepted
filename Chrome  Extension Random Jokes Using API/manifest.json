@@ -1,0 +1,15 @@
+{
+    "name" : "I Dont Know Jokes",
+    "version" : "1.0.0",
+    "manifest_version" : 2,
+    "browser_action" : {
+        "default_popup" : "popup.html",
+        "default_icon" : "kidding.png"
+    },
+    "icons" : {
+        "512" : "kidding.png",
+        "128" : "kidding.png"
+    },
+    "permission" : ["activeTab"]
+
+}
