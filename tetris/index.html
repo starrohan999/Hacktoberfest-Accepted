@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Tetris Game JS</title>
+    <style>
+        #score{
+            display: inline-block;
+        }
+        div{
+            font-size: 25px;
+            font-weight: bold;
+            font-family: monospace;
+            text-align: center;
+        }
+        canvas{
+            display: block;
+            margin:0 auto;
+        }
+    </style>
+</head>
+<body>
+   <div>Tetris Game JS</div><br>
+       <p>1. Use the ⇦ and ⇨ arrow keys to move blocks to desired position.</p>
+       <p>2. Use the ⇧ arrow key to rotate the block.</p>
+       <p>3. Use the ⇩ arrow key to move blocks faster</p>
+    <canvas id="tetris" width="200" height="400"></canvas>
+    <div>
+        Score : <div id="score">0</div>
+    </div>
+    <script src="tetrominoes.js"></script>
+    <script src="tetris.js"></script>
+</body>
+</html>
