@@ -1,44 +1,43 @@
-#include<stdio.h>
-#include<stdlib.h>
+// Selection sort in C
 
+#include <stdio.h>
 
-void Swap(int *x,int *y)
-{
-	int temp=*x;
-	*x=*y;
-	*y=temp;
+// function to swap the the position of two elements
+void swap(int *a, int *b) {
+  int temp = *a;
+  *a = *b;
+  *b = temp;
 }
 
-void Bubble(int A[],int n)
-{ 
-	int i,j,flag=0;
-	for(i=0;i<n-1;i++)
-	{
-		flag=0;
-		
-		for(j=0;j<n-1-i;j++)
-		{
-		
-		if(A[j]>A[j+1])
-		{
-			Swap(&A[j],&A[j+1]);
-			flag=1;
-		}
-	}
-		if(flag==0)
-			break;
+void selectionSort(int array[], int size) {
+  for (int step = 0; step < size - 1; step++) {
+    int min_idx = step;
+    for (int i = step + 1; i < size; i++) {
 
-	}
+      // To sort in descending order, change > to < in this line.
+      // Select the minimum element in each loop.
+      if (array[i] < array[min_idx])
+        min_idx = i;
+    }
 
+    // put min at the correct position
+    swap(&array[min_idx], &array[step]);
+  }
 }
 
+// function to print an array
+void printArray(int array[], int size) {
+  for (int i = 0; i < size; ++i) {
+    printf("%d  ", array[i]);
+  }
+  printf("\n");
+}
 
-int main()
-{
-	int A[]={3,5,7,8,15,10},n=6,i;
-	Bubble(A,6);
-	for (i=0;i<6;i++)
-		printf("%d ",A[i]);
-	printf(" \n");
-	return 0;
+// driver code
+int main() {
+  int data[] = {20, 12, 10, 15, 2};
+  int size = sizeof(data) / sizeof(data[0]);
+  selectionSort(data, size);
+  printf("Sorted array in Acsending Order:\n");
+  printArray(data, size);
 }
