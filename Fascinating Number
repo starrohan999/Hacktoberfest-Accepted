@@ -1,0 +1,51 @@
+//This code was contributed by @VividhPandey003
+import java.util.*;
+public class fascinatingNumber
+{   
+    public static void main(String args[])
+    {   
+        Scanner sc=new Scanner(System.in);
+        int m,n=0; int k=0; int no1,no2,no3=0; int len=0;
+        String word="";String st="";String str="123456789";
+        char ch='\0'; char chr='\0',t='\0';           
+        System.out.println("Enter a range");
+        m=sc.nextInt();
+        n=sc.nextInt();
+        if(m>99&&n<10000 && m<n)            
+        {   
+            System.out.println("The fascinating numbers are:");             
+            for(int i=m;i<=n;i++)              
+            { 
+                word=""; st="";
+                no1=i*1;
+                no2=i*2;
+                no3=i*3;
+                word=Integer.toString(no1)+Integer.toString(no2)+Integer.toString(no3);
+                char c[]=word.toCharArray();            
+                len=c.length;
+                for(int j=0;j<len-1;j++)
+                { 
+                    ch=c[j];
+                    chr=c[j+1];
+                    if(ch>chr)
+                    { 
+                        t=ch;           
+                        ch=chr;
+                        chr=t;c[j+1]=chr;c[j]=ch;
+                        j=-1;
+                    }
+                }   //array is sorted now
+                st= String.valueOf(c);
+                if(Long.valueOf(st)==123456789)         
+                {
+                    k++;
+                    System.out.print(i +"   ");
+                }
+            }
+            System.out.println();                 //optional
+            System.out.println("frequency="+ k);
+        }
+        else 
+            System.out.println("INVALID INPUT");
+    }
+}
