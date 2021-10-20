@@ -1,0 +1,12 @@
+*{
+    background:linear-gradient(rgb(229, 31, 247),rgb(243, 176, 99));
+}
+
+.body{
+    text-align: center;
+    margin-top: 200px;
+    height: 200px;
+    border: 10px grey solid;
+    border-top-style: ridge;
+    background: linear-gradient(rgb(47, 0, 255),orange,rgb(129, 194, 44));
+}
