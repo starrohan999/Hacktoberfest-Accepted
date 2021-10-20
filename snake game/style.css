@@ -1,0 +1,37 @@
+body{
+    background: linear-gradient(lightgreen,yellow);
+    text-align: center;
+}
+.start{
+    height: 50px;
+    width: 100px;
+}
+.score{
+    font-family: 'Times New Roman', Times, serif;
+    height: 100px;
+    margin-top: 10px;
+}
+span{
+    color: blue;
+}
+.grid {
+    margin: 50px 200px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+  }
+  
+  .grid div {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .snake {
+    background-color: blue;
+  }
+  
+  .apple {
+    background-color: purple;
+  }
