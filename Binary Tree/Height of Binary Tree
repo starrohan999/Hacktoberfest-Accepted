@@ -1,0 +1,36 @@
+// Height of tree in tree.
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+class Node{
+    public:
+    int data;
+    Node* left;
+    Node* right;
+    
+    Node(int d){
+        data=d;
+        left=right=NULL;
+    }
+};
+
+int heightOfNodes(Node* root){
+    if(root==NULL){
+        return 0;
+    }
+    return 1 + max(heightOfNodes(root->left) , heightOfNodes(root->right));
+}
+
+int main()
+{
+    Node *root=new Node(12);
+    root->left=new Node(20);
+    root->right=new Node(11);
+    root->left->right=new Node(7);
+    int answer=heightOfNodes(root);
+    cout<<"Your output is "<<answer;
+
+    return 0;
+}
