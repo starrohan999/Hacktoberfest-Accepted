@@ -1,0 +1,19 @@
+
+body{
+    background: url('background.png');
+}
+.square{
+    border: 2px solid black;
+    height: 160px;
+    width: 160px;
+}
+.grid{
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 400px;
+}
+.mole{
+    background: url('mole.jfif');
+    background-size: cover;
+}

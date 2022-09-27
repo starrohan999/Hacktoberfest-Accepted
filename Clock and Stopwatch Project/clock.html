@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Clock Project Pro</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <i class="fas fa-clock"></i>My Html Clock
+  </nav>
+
+  <div class="headline">Current Time</div>
+  <div class="container">
+    <section>
+      <div class="clock">
+        <div class="hr"></div>
+        <div class="mn"></div>
+        <div class="sc"></div>
+      </div>
+    </section>
+    <section>
+      <div class="box">
+        <h1 id="hr">00</h1>
+        <h4>Hrs</h4>
+      </div>
+      <div class="box">
+        <h1 id="min">00</h1>
+        <h4>Min</h4>
+      </div>
+      <div class="box">
+        <h1 id="sec">00</h1>
+        <h4>Sec</h4>
+      </div>
+      <div class="box">
+        <h1 id="ampm">AM</h1>
+      </div>
+    </section>
+    <script>
+      showDate();
+    </script>
+  </div>
+  <div class="headline">Timer</div>
+  <section>
+    <div class="box">
+      <h1 id="timerHr">00</h1>
+      <h4>Hrs</h4>
+    </div>
+    <div class="box">
+      <h1 id="timerMin">00</h1>
+      <h4>Min</h4>
+    </div>
+    <div class="box">
+      <h1 id="timerSec">00</h1>
+      <h4>Sec</h4>
+    </div>
+    <div class="clear"></div>
+  </section>
+  <section>
+    <div id="but">
+      <button onclick="startTimer()" id="startTimer" class="btn">
+        Start Timer
+      </button>
+      <button onclick="stopTimer()" class="btn">Stop Timer</button>
+      <button onclick="resetTimer()" class="btn">Reset Timer</button>
+    </div>
+  </section>
+  <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:"Ubuntu",sans-serif;
+	box-sizing:border-box;
+	text-decoration:none;
+}
+body{
+	height:100vh;
+	background-image:url("https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80");
+    background-size:cover;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.profile-card{
+	width:400px;
+	text-align:center;
+	border-radius:8px;
+	overflow:hidden;
+}
+.card-header{
+	background:#2c3a47;
+	padding:60px 40px;
+}
+.pic{
+	display:inline-block;
+	padding:8px;
+	background :linear-gradient(130deg,#74b9ff,#e66767);
+	margin:auto;
+	border-radius:50%;
+	background-size:200% 200%;
+	animation:animation-gradient 2s linear infinite;
+}
+@keyframes animation-gradient{
+	25%{
+		background-position:left botttom;
+	}
+	50%{
+		background-position:left botttom;
+	}
+	75%{
+		background-position:left botttom;
+	}
+	100%{
+		background-position:left botttom;
+	}
+}
+.pic img{
+	display:block;
+	width:100px;
+	height:104px;
+	border-radius:50%;
+}
+.name{
+	color:#f2f2f2;
+	font-size:28px;
+	font-weight:600px;
+	margin:10px 0;
+}
+.desc{
+	font-size:18px;
+	color:#e64767;
+}
+.so{
+	display:flex;
+    justify-content:center;
+	margin:20px 0;
+}
+.so a{
+	color:#f2f2f2;
+	width:56px;
+	font-size:22px;
+	transition:.3s linear;
+}
+.so a:hover{
+	color:#e66767;
+}
+.contact-btn{
+	display:inline-block;
+	padding:12px 50px;
+	color:#e66767;
+	border:2px solid #e66767;
+	border-radius:6px;
+	transition:.3s linear;
+}
+.contact-btn:hover{
+	background:#e66767;
+	color:#f2f2f2;
+}
+.card-footer{
+	background:#f2f2f2;
+	padding:60px 10px;
+}
+.number{
+	display:flex;
+	align-items:center;
+}
+.item{
+	flex:1;
+	text-transform:uppercase;
+	font-size:13px;
+	color:#e66767;
+}
+.item span{
+	display:block;
+color:black;
+}
+
+
+	
+}
+	
+
+

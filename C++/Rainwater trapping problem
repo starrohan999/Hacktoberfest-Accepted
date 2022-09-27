@@ -1,0 +1,50 @@
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+
+int rainwaterProblem(int arr[],int n){
+    int leftarr[n];
+    int rightarr[n];
+    leftarr[0]=arr[0];
+    rightarr[n-1]=arr[n-1];
+    
+    for(int i=1;i<n;i++){
+        if(arr[i]>leftarr[i-1]){
+            leftarr[i]=arr[i];
+        }
+        else{
+            leftarr[i]=leftarr[i-1];
+        }
+    }
+    
+    for(int j=n-2;j>=0;j--){
+        if(arr[j]>rightarr[j+1]){
+            rightarr[j]=arr[j];
+        }
+        else{
+            rightarr[j]=rightarr[j+1];
+        }
+        
+    }
+    
+    int total=0;
+    for(int i=0;i<n;i++){
+        int p=min(leftarr[i],rightarr[i])-arr[i];
+        total=total+p;
+        
+    }
+    
+    return total;
+}
+
+int main()
+{
+    
+    int arr[]={3,0,0,2,0,4};
+    int result=rainwaterProblem(arr,6);
+    cout<<"Your output is "<<result;
+
+    return 0;
+}
